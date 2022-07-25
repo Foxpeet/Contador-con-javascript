@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador con javascript</title>
+
+    <link rel="stylesheet" href="contador.css" type="text/css">
+    <script src="contador.js"></script>
 </head>
 <body>
     <!-- Contador -->
@@ -17,12 +20,11 @@
 
     <!-- Temporizador -->
     <h1>Temporizador</h1>
-    <h2 id="temporizador">00:00:00</h2>
+    <h2 id="temporizador">0:0:0:0</h2>
 
-    <button onclick="startTemporizador()">Comenzar</button>
+    <button onclick="startTemporizador()" id="comenzar">Comenzar</button>
+    <button onclick="continuarTemporizador()" id="continuar">Continuar</button>
     <button onclick="stopTemporizador()">Parar</button>
     <button onclick="resetTemporizador()">Resetear</button>
-
-    <script src="contador.js"></script>
 </body>
 </html>
